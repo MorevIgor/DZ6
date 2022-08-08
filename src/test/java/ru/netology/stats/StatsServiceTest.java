@@ -34,7 +34,7 @@ public class StatsServiceTest {
 
         long[] sale = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long expectedMaxAmountSale = 8;
+        long expectedMaxAmountSale = 7; //ошибка с ячейкой
         long actualMaxAmountSale = service.maxAmountSale(sale);
 
         Assertions.assertEquals(expectedMaxAmountSale, actualMaxAmountSale);
@@ -46,7 +46,7 @@ public class StatsServiceTest {
 
         long[] sale = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long expectedMinAmountSale = 9;
+        long expectedMinAmountSale = 8;// ошибка с ячейкой
         long actualMinAmountSale = service.minAmountSale(sale);
 
         Assertions.assertEquals(expectedMinAmountSale, actualMinAmountSale);
